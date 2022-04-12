@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 80px 50px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    /* height: 100vh; */
+    justify-content: space-evenly;
+}
+
+ul {
+    color: white;
+    list-style: circle;
+    margin: 20px 0 0 20px;
+    line-height: 30px;
+    font-size: large;
+}
+
+@media only screen and (max-width:999px) {
+    section {
+        height: 100%;
+    }
+    section>h1 {
+        line-height: normal;
+    }
+}

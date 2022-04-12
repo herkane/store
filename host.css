@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    text-align: center;
+}
+
+.info>h1 {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+.pricing {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing>div>h1 {
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+.pricing>div {
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #DEE6EE;
+    border: 2.5px solid black;
+    width: 300px;
+    transition: all 0.3s;
+}
+
+.pricing>div>ul {
+    color: black;
+    text-align: left;
+}
+
+.pricing>div:hover {
+    transition: all 0.3s;
+    background-color: #313233;
+    box-shadow: 0 0 10px black;
+    color: white;
+}
+
+.pricing>div:hover>ul {
+    transition: all 0.3s;
+    color: white;
+}
+
+.pricing>div>button {
+    background-color: #376797;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.pricing>div:hover>button {
+    transition: all 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.pricing>div:hover>button:hover {
+    transition: all 0.3s;
+    background-color: #376797;
+    color: white;
+}
+
+@media only screen and (max-width:999px) {
+    .info {
+        height: 100%;
+    }
+    .pricing>div {
+        margin: 20px 0;
+    }
+}

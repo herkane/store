@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.price {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.price>h1 {
+    margin: 2rem 0;
+}
+
+.item {
+    padding: 20px;
+    width: 20em;
+    text-align: center;
+    margin: 2rem;
+    height: fit-content;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 10px;
+    background-color: #DEE6EE;
+    border: 2.5px solid black;
+    transition: all 0.3s;
+}
+
+.item:hover {
+    transition: all 0.3s;
+    background-color: #313233;
+    box-shadow: 0 0 10px black;
+    color: white;
+}
+
+#total {
+    color: white;
+    text-decoration: 2px solid black;
+}
+
+.item>h1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+    border-width: 100%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    transition: all 0.3s;
+    box-shadow: 1px 1px25px black;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+.price>button {
+    height: 3rem;
+    width: 10rem;
+    border: 2px solid green;
+    padding: 0.5rem;
+    color: green;
+    background-color: white;
+    font-size: large;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.price>button:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.3s;
+}
+
+#annuler {
+    margin-top: 1rem;
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    height: fit-content;
+    transition: all 0.3s;
+}
+
+#annuler:hover {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width:999px) {
+    header {
+        position: relative;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    header>nav {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer {
+        position: relative;
+        width: 100%;
+    }
+    body {
+        background-size: cover;
+    }
+}

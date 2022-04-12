@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 30rem;
+    padding: 1rem;
+}
+
+.container {
+    margin: 2rem 1rem;
+    width: 933px;
+    /* background-color: rgb(118, 200, 255); */
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 0.5rem;
+    /* box-shadow: .5rem .5rem 1rem black; */
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.details {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+    padding: 1rem 2rem;
+}
+
+.price {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.demo:hover {
+    border-color: red;
+    background-color: white;
+    color: red;
+}
+
+.price>h1 {
+    margin: 1rem;
+}
+
+button {
+    border: 2px solid rgb(0, 192, 0);
+    background-color: white;
+    color: rgb(0, 192, 0);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+button:hover {
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+    background-color: rgb(0, 192, 0);
+    color: white;
+    transition: all 0.3s;
+}
+
+
+/* small desktop */
+
+@media all and (max-width: 1200px) {}
+
+
+/* tablet */
+
+@media all and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .hero {
+        justify-content: center;
+    }
+}
+
+
+/* mobile phone */
+
+@media all and (max-width: 768px) {
+    .container {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .hero {
+        justify-content: center;
+    }
+    .img {
+        width: 100%;
+    }
+}
